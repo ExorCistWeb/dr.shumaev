@@ -441,12 +441,12 @@ header {
 }
 
 .nav-link a {
+    color: #1F2938;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
     display: flex;
     align-items: center;
-    color: #686e77;
     text-decoration: none;
     margin-right: 40px;
     transition: 0.5s all;
@@ -2408,4 +2408,16 @@ footer .doctors__button_border {
 
 .discount_btn {
     margin-top: 33px;
+}
+
+.timer_cont {
+    display: flex;
+    align-items: center;
+    margin-top: 28px;
+}
+
+.timer_cont .timer_p {
+    font-size: 16px;
+    margin-left: 20px;
+    max-width: 200px;
 }
