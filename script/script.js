@@ -55,7 +55,7 @@
      //   delay: 3500,
      //   disableOnInteraction: false,
      // },
-
+     loop: true,
      slidesPerGroup: 1,
      slidesPerView: 2,
      spaceBetween: 105,
