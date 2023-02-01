@@ -2225,7 +2225,22 @@ footer .doctors__button_border {
     margin-bottom: 14px !important;
 }
 
-.ac.is-active .ac-panel p {
+.ac h6 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.12px;
+    margin: 0;
+    padding: 0;
+    max-width: 779px;
+    color: #686E77;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.ac.is-active .ac-panel h6 {
+    font-weight: 400;
     font-size: 16px;
     line-height: 21px;
     letter-spacing: 0.12px;
@@ -2253,8 +2268,7 @@ footer .doctors__button_border {
 }
 
 .ac.js-enabled .ac-panel {
-    transition-duration: .3s !important;
-    transition-timing-function: cubic-bezier(0.25, 0.1, 1, 1.01);
+    transition-duration: .4s !important;
 }
 
 .price_warning {
@@ -2849,6 +2863,10 @@ footer .doctors__button_border {
 
 .price_table_line h3 span {
     color: #E31E24;
+}
+
+.h2_nowrap {
+    white-space: nowrap;
 }
 
 .price_table_line h3 s {
