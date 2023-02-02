@@ -20,7 +20,7 @@
 
      loop: true,
 
-     slidesPerView: 3.8,
+     slidesPerView: 4.3,
      spaceBetween: 14,
      slidesPerGroup: 1,
      centeredSlides: true,
