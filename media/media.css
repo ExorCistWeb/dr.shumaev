@@ -1,0 +1,26 @@
+@media (max-width: 1670px) {
+    .wrapper {
+        padding: 0 40px;
+    }
+    .map_block {
+        padding: 250px 0 250px;
+    }
+    .clinic .swiper,
+    .doctors-slider {
+        zoom: 0.96;
+    }
+    .all_services_content {
+        grid-gap: 20px;
+    }
+    .all_services_box {
+        padding: 25px;
+        width: 355px;
+        height: 360px;
+    }
+    .transfer {
+        height: 400px;
+    }
+    .reviews {
+        padding-bottom: 30px;
+    }
+}

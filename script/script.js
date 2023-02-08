@@ -17,10 +17,10 @@
          delay: 3500,
          disableOnInteraction: false,
      },
-
+     slidesPerView: 4.3,
      loop: true,
 
-     slidesPerView: 4.3,
+
      spaceBetween: 14,
      slidesPerGroup: 1,
      centeredSlides: true,
@@ -29,6 +29,20 @@
          nextEl: ".swiper-button-next",
          prevEl: ".swiper-button-prev",
      },
+     breakpoints: {
+         375: {
+             slidesPerView: 1.3,
+         },
+         768: {
+             slidesPerView: 3.3,
+         },
+         1790: {
+             slidesPerView: 4,
+         },
+         1920: {
+             slidesPerView: 4.3,
+         },
+     }
  });
 
  new Swiper(".rating-slider", {
@@ -48,6 +62,7 @@
          nextEl: ".rating-button-next",
          prevEl: ".rating-button-prev",
      },
+
  });
 
  new Swiper(".doctors-slider", {
@@ -90,6 +105,20 @@
          nextEl: ".repairing-button-next",
          prevEl: ".repairing-button-prev",
      },
+     breakpoints: {
+         375: {
+             slidesPerView: 1.3,
+         },
+         768: {
+             slidesPerView: 3.8,
+         },
+         1790: {
+             slidesPerView: 3.8,
+         },
+         1920: {
+             slidesPerView: 4,
+         },
+     }
  })
 
  // Default options
