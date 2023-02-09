@@ -3388,3 +3388,14 @@ footer .doctors__button_border {
 .partner-slider {
     margin-top: 50px;
 }
+
+.swiper-button {
+    position: relative;
+}
+
+.swiper-header .swiper-button::after {
+    content: url(../images/jaws/prise.svg);
+    position: absolute;
+    right: -25px;
+    top: -10px;
+}
