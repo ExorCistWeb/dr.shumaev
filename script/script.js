@@ -120,6 +120,20 @@
          },
      }
  })
+ new Swiper(".partner-slider", {
+     slidesPerGroup: 1,
+     slidesPerView: 5,
+     spaceBetween: 28,
+     centeredSlides: true,
+
+     loop: true,
+
+     navigation: {
+         nextEl: ".partner-button-next",
+         prevEl: ".partner-button-prev",
+     },
+
+ })
 
  // Default options
  new Accordion('.accordion-container');

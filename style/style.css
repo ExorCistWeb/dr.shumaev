@@ -3159,3 +3159,232 @@ footer .doctors__button_border {
     top: -32.5px;
     left: -44px;
 }
+
+
+/* Implants */
+
+.implants_s_banner {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    /* identical to box height */
+    color: #686E77;
+}
+
+.implants_title_banner {
+    white-space: nowrap;
+}
+
+.implants_p {
+    max-width: 840px;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    color: #686E77;
+}
+
+.implants_h2 {
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 77px;
+    color: #1F2938;
+}
+
+.timer_p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    /* or 131% */
+    color: #686E77;
+}
+
+.experience__column span {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    /* or 131% */
+    letter-spacing: -0.36px;
+    color: #1F2938;
+}
+
+.readings_flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.readings_content {
+    display: flex;
+}
+
+.readings_box {
+    width: 100%;
+    max-width: 375px;
+    height: 360px;
+    background: #FFFFFF;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.readings_box img {
+    margin-bottom: 20px;
+}
+
+.readings_box p {
+    text-align: center;
+}
+
+.r_box {
+    margin-right: 30px;
+}
+
+.readings_titile {
+    max-width: 446px;
+}
+
+.readings_titile p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.12px;
+    font-feature-settings: 'kern' off;
+    color: #686E77;
+}
+
+.good_method .red_btn {
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 345px;
+    margin-bottom: 100px;
+}
+
+.core_p_title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    font-feature-settings: 'cpsp' on;
+    color: #686E77;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 845px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.care__column_implants p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    /* or 133% */
+    letter-spacing: 0.1px;
+    font-feature-settings: 'cpsp' on;
+    color: #686E77;
+    max-width: 640px !important;
+}
+
+.care__column_implants h4 {
+    max-width: 600px !important;
+}
+
+.reliability_implants .reliability_box div {
+    width: 57px;
+    height: 50px;
+}
+
+.reliability_implants .reliability_box {
+    margin-bottom: 15px;
+    height: 50px;
+}
+
+.reliability_implants .reliability_box p {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    /* identical to box height, or 167% */
+    letter-spacing: -0.36px;
+    color: #1F2938;
+    white-space: nowrap;
+}
+
+.shum_content {
+    display: flex;
+}
+
+.shum_box {
+    width: 240px;
+    height: 248px;
+    background: #FFFFFF;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.implant_shum {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 135px;
+}
+
+.shum_box {
+    text-align: center;
+    margin-left: 30px;
+}
+
+.shum_box h2 {
+    font-weight: 600;
+    font-size: 96px;
+    /* or 25% */
+    text-align: center;
+    letter-spacing: 0.12px;
+    font-feature-settings: 'kern' off;
+    color: #1F2938;
+    line-height: 72px;
+}
+
+.shum_box h3 {
+    font-weight: 600;
+    font-size: 36px;
+    /* identical to box height, or 67% */
+    text-align: center;
+    letter-spacing: 0.12px;
+    font-feature-settings: 'kern' off;
+    color: #E31E24;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.shum_box p {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    /* or 133% */
+    text-align: center;
+    letter-spacing: 0.12px;
+    font-feature-settings: 'kern' off;
+    color: #686E77;
+}
+
+.shum_box p span {
+    font-weight: 600;
+    color: #1F2938;
+}
+
+.partners {
+    background: #EAFAFF;
+    padding: 80px 0 100px;
+    margin-bottom: 100px;
+}
+
+.partner-slider {
+    margin-top: 50px;
+}
