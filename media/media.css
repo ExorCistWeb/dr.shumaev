@@ -1,3 +1,11 @@
+.desktop {
+    display: block;
+}
+
+.tablet {
+    display: none;
+}
+
 @media (max-width: 1670px) {
     .wrapper {
         padding: 0 40px;
@@ -22,5 +30,29 @@
     }
     .reviews {
         padding-bottom: 30px;
+    }
+}
+
+@media (max-width: 1600px) {
+    .desktop {
+        display: none !important;
+    }
+
+    .tablet {
+        display: block !important;
+    }
+
+    header .logo {
+        width: 25%;
+    }
+
+    header .nav-link {
+        width: 67%;
+
+        justify-content: space-between;
+    }
+
+    header .tel_form {
+        margin-left: 0;
     }
 }

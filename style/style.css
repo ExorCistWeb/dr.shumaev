@@ -319,7 +319,7 @@ h2 span {
 }
 
 .patients {
-    background-color: #EAFAFF;
+    background-color: #eafaff;
     border-radius: 25px;
     padding: 70px 0 80px;
 }
@@ -408,8 +408,8 @@ h2 span {
     line-height: 54px;
     /* identical to box height, or 123% */
     letter-spacing: -0.36px;
-    font-feature-settings: 'pnum' on, 'lnum' on, 'kern' off;
-    color: #1F2938;
+    font-feature-settings: "pnum" on, "lnum" on, "kern" off;
+    color: #1f2938;
 }
 
 .facts-grid {
@@ -418,7 +418,7 @@ h2 span {
 
 .fact {
     height: 150px;
-    background-color: #EAFAFF;
+    background-color: #eafaff;
     border-radius: 24px;
     display: flex;
     align-items: center;
@@ -433,7 +433,7 @@ h2 span {
     margin-left: 20px;
     font-size: 24px;
     font-weight: 600;
-    color: #1F2938;
+    color: #1f2938;
 }
 
 .d_flex {
@@ -450,10 +450,13 @@ h2 span {
 header {
     padding: 32px 0;
     justify-content: space-between;
+
+    position: relative;
+    z-index: 5;
 }
 
 .nav-link a {
-    color: #1F2938;
+    color: #1f2938;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
@@ -466,6 +469,88 @@ header {
 
 .nav-link a:hover {
     color: #e31e24;
+}
+
+.nav-link_tablet{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+
+    width: 100%;
+    height: calc(100vh - 151px);
+    overflow: hidden;
+
+    background-color: #EAFAFF;
+}
+
+.burger-button {
+    width: 48px;
+    height: 48px;
+    padding: 15px 13px;
+    margin-left: 24px;
+
+    background-color: #f0f2f2;
+    border-radius: 500px;
+
+    position: relative;
+    top: calc(50% + 48px);
+    transform: translateY(25%);
+
+    cursor: pointer;
+
+    transition: 0.5s all;
+}
+
+.burger-button span {
+    width: 22px;
+    height: 3px;
+
+    background-color: #1f2938;
+    border-radius: 50px;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.burger-button span:first-child {
+    top: 15px;
+}
+
+.burger-button span:nth-child(2) {
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.burger-button span:last-child {
+    bottom: 15px;
+}
+
+.burger-button.active{
+    background-color: #E31E24;
+}
+
+.burger-button.active span{
+    background-color: white;
+}
+
+.burger-button.active span:nth-child(2){
+    opacity: 0;
+}
+
+.burger-button.active span:first-child {
+    top: 47%;
+    transform: rotate(-45deg);
+}
+
+.burger-button.active span:last-child {
+    bottom: 46.6%;
+    transform: rotate(-135deg);
+}
+
+.burger-button.active span{
+    left: initial;
 }
 
 .soc_link a {
@@ -749,12 +834,11 @@ header {
     padding: 0;
 }
 
-
 /* main */
 
 .cases {
     padding: 70px 60px 78px;
-    background-color: #EAFAFF;
+    background-color: #eafaff;
     background-image: url("../images/cases/waves.svg");
     background-size: cover;
 }
@@ -806,7 +890,6 @@ header {
     line-height: 21px;
     color: #999ea5;
 }
-
 
 /*  */
 
@@ -941,7 +1024,6 @@ header {
     background-image: url("../images/reasons/grownups/5.png");
 }
 
-
 /*  */
 
 .children-form h2 {
@@ -952,12 +1034,11 @@ header {
     right: 145px;
 }
 
-
 /*  */
 
 .care {
     padding: 60px 30px 117px;
-    background-color: #EAFAFF;
+    background-color: #eafaff;
     border-radius: 28px;
 }
 
@@ -1013,7 +1094,6 @@ header {
 .care__column:last-child h4 {
     max-width: 373px;
 }
-
 
 /*  */
 
@@ -1090,18 +1170,17 @@ header {
     height: 27px;
 }
 
-
 /*  */
 
 .clients {
     padding: 80px 30px;
     margin-bottom: 100px;
-    background-color: #EAFAFF;
+    background-color: #eafaff;
 }
 
 .clients-grid {
     grid-auto-flow: column;
-    grid-gap: 25px
+    grid-gap: 25px;
 }
 
 .clients h2 {
@@ -1155,7 +1234,6 @@ header {
     justify-content: flex-end;
 }
 
-
 /*  */
 
 .payment-form h2 {
@@ -1176,7 +1254,6 @@ header {
     height: 95%;
     right: 245px;
 }
-
 
 /*  */
 
@@ -1208,7 +1285,7 @@ header {
 }
 
 .rate {
-    background-color: #EAFAFF;
+    background-color: #eafaff;
     border-radius: 25px;
     padding: 50px 60px 72px 41px;
 }
@@ -1255,7 +1332,6 @@ header {
     color: #191919;
     display: block;
 }
-
 
 /*  */
 
@@ -1334,7 +1410,7 @@ header {
 }
 
 .doctor {
-    background-color: #EAFAFF;
+    background-color: #eafaff;
     border-radius: 25px;
     display: flex;
 }
@@ -1408,7 +1484,6 @@ header {
     transition: 0.5s all;
 }
 
-
 /*  */
 
 .clinic {
@@ -1468,7 +1543,6 @@ header {
     left: 30px !important;
 }
 
-
 /*  */
 
 .map {
@@ -1507,12 +1581,11 @@ header {
     margin: 0;
 }
 
-
 /*  */
 
 footer {
     padding: 63px 166px 25px;
-    background-color: #EAFAFF;
+    background-color: #eafaff;
 }
 
 .footer__row {
@@ -1572,7 +1645,6 @@ footer .doctors__button_border {
     color: #e31e24;
 }
 
-
 /*  */
 
 .repair {
@@ -1617,7 +1689,6 @@ footer .doctors__button_border {
     left: 9% !important;
 }
 
-
 /*  */
 
 .damon__slide {
@@ -1628,7 +1699,6 @@ footer .doctors__button_border {
 .damon-slider .swiper-wrapper {
     margin-left: -25% !important;
 }
-
 
 /*  */
 
@@ -1663,7 +1733,6 @@ footer .doctors__button_border {
     line-height: 24px;
     font-weight: 600;
 }
-
 
 /*  */
 
@@ -1774,7 +1843,6 @@ footer .doctors__button_border {
     display: flex;
 }
 
-
 /*  */
 
 .tax-form .form_cons {
@@ -1804,13 +1872,12 @@ footer .doctors__button_border {
     max-width: 100%;
 }
 
-
 /*  */
 
 .implant_cont {
     background-image: url("../images/implantation/background.svg");
     background-size: cover;
-    background-color: #EAFAFF;
+    background-color: #eafaff;
 }
 
 .implantation {
@@ -1844,7 +1911,6 @@ footer .doctors__button_border {
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
 }
-
 
 /*  */
 
@@ -1907,14 +1973,14 @@ footer .doctors__button_border {
     height: 70px;
 }
 
-
 /*  */
 
 .compare {
     width: 100%;
 }
 
-.compare-content {}
+.compare-content {
+}
 
 .compare h2 {
     margin-bottom: 40px;
@@ -1931,7 +1997,7 @@ footer .doctors__button_border {
 
 .compare__item {
     height: 610px;
-    background-color: #EAFAFF;
+    background-color: #eafaff;
     border-radius: 24px;
     position: relative;
 }
@@ -1990,7 +2056,6 @@ footer .doctors__button_border {
 .compare__head {
     padding: 32px 40px 40px;
 }
-
 
 /*  */
 
@@ -2053,13 +2118,12 @@ footer .doctors__button_border {
     color: #e31e24;
 }
 
-
 /*  */
 
 .consult {
     padding: 70px 30px 52px;
     margin-bottom: 100px;
-    background-color: #EAFAFF;
+    background-color: #eafaff;
 }
 
 .consult-grid {
@@ -2113,7 +2177,6 @@ footer .doctors__button_border {
     color: #e31e24;
 }
 
-
 /*  */
 
 .jaws {
@@ -2128,7 +2191,7 @@ footer .doctors__button_border {
 .jaws h3 {
     margin-bottom: 20px;
     font-size: 32px;
-    color: #E31E24;
+    color: #e31e24;
 }
 
 .jaws__column:last-child {
@@ -2144,9 +2207,8 @@ footer .doctors__button_border {
 }
 
 .jaws p {
-    color: #686E77;
+    color: #686e77;
 }
-
 
 /* NEW */
 
@@ -2159,7 +2221,7 @@ footer .doctors__button_border {
     font-size: 24px;
     line-height: 32px;
     letter-spacing: -0.08px;
-    color: #999EA5;
+    color: #999ea5;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -2170,7 +2232,7 @@ footer .doctors__button_border {
     height: 64px;
     top: 20px;
     left: 20px;
-    background: #FFFFFF;
+    background: #ffffff;
     border-radius: 999px;
 }
 
@@ -2179,7 +2241,7 @@ footer .doctors__button_border {
 }
 
 .accordion-container {
-    background: #EAFAFF;
+    background: #eafaff;
     border-radius: 24px;
     padding: 16px 50px;
     margin-top: 40px;
@@ -2188,7 +2250,7 @@ footer .doctors__button_border {
 .ac {
     background: none;
     border: none;
-    border-bottom: 1px solid #D9DADB;
+    border-bottom: 1px solid #d9dadb;
 }
 
 .ac_end {
@@ -2200,7 +2262,7 @@ footer .doctors__button_border {
     align-items: center;
     justify-content: center;
     content: "+";
-    color: #1F2938;
+    color: #1f2938;
     text-align: center;
     width: 18px;
     height: 18px;
@@ -2221,13 +2283,13 @@ footer .doctors__button_border {
     font-size: 20px;
     line-height: 24px;
     letter-spacing: -0.08px;
-    color: #1F2938;
+    color: #1f2938;
     padding: 32px 0;
     outline: none;
 }
 
 .ac .ac-trigger:focus {
-    color: #1F2938;
+    color: #1f2938;
 }
 
 .ac.is-active .ac-panel {
@@ -2246,7 +2308,7 @@ footer .doctors__button_border {
     margin: 0;
     padding: 0;
     max-width: 779px;
-    color: #686E77;
+    color: #686e77;
     display: flex;
     align-items: center;
     margin-bottom: 20px;
@@ -2260,7 +2322,7 @@ footer .doctors__button_border {
     margin: 0;
     padding: 0;
     max-width: 779px;
-    color: #686E77;
+    color: #686e77;
     display: flex;
     align-items: center;
     margin-bottom: 20px;
@@ -2281,7 +2343,7 @@ footer .doctors__button_border {
 }
 
 .ac.js-enabled .ac-panel {
-    transition-duration: .4s !important;
+    transition-duration: 0.4s !important;
 }
 
 .price_warning {
@@ -2304,7 +2366,7 @@ footer .doctors__button_border {
     max-width: 360px;
     height: 552px;
     padding: 30px;
-    background: #FFFFFF;
+    background: #ffffff;
     border-radius: 24px;
     display: flex;
     flex-direction: column;
@@ -2320,7 +2382,7 @@ footer .doctors__button_border {
     max-width: 750px;
     height: 260px;
     padding: 30px;
-    background: #FFFFFF;
+    background: #ffffff;
     border-radius: 24px;
     display: flex;
 }
@@ -2358,8 +2420,8 @@ footer .doctors__button_border {
     font-size: 16px;
     line-height: 21px;
     letter-spacing: 0.12px;
-    font-feature-settings: 'kern' off;
-    color: #E31E24;
+    font-feature-settings: "kern" off;
+    color: #e31e24;
     margin-top: 10px;
     text-decoration: none;
 }
@@ -2406,7 +2468,7 @@ footer .doctors__button_border {
     line-height: 30px;
     /* identical to box height, or 167% */
     letter-spacing: -0.36px;
-    color: #1F2938;
+    color: #1f2938;
     margin-bottom: 6px;
 }
 
@@ -2416,7 +2478,7 @@ footer .doctors__button_border {
     line-height: 21px;
     /* or 131% */
     letter-spacing: 0.12px;
-    font-feature-settings: 'kern' off;
+    font-feature-settings: "kern" off;
 }
 
 .init_btn {
@@ -2467,7 +2529,7 @@ footer .doctors__button_border {
 }
 
 .cases_flex_box {
-    background: #FAFAFC;
+    background: #fafafc;
     border-radius: 24px;
     height: 113px;
     display: flex;
@@ -2480,7 +2542,7 @@ footer .doctors__button_border {
     font-size: 18px;
     line-height: 24px;
     letter-spacing: -0.08px;
-    color: #1F2938;
+    color: #1f2938;
 }
 
 .cases_flex_img {
@@ -2501,7 +2563,7 @@ footer .doctors__button_border {
 }
 
 .cases_title p {
-    color: #686E77;
+    color: #686e77;
 }
 
 .authoring_method_grid {
@@ -2512,7 +2574,7 @@ footer .doctors__button_border {
 }
 
 .authoring_method_box {
-    background: #EAFAFF;
+    background: #eafaff;
     border-radius: 24px;
     width: 780px;
     height: 333px;
@@ -2520,7 +2582,7 @@ footer .doctors__button_border {
 }
 
 .authoring_method_box2 {
-    background: #EAFAFF;
+    background: #eafaff;
     border-radius: 24px;
     width: 100%;
     max-width: 780px;
@@ -2529,7 +2591,7 @@ footer .doctors__button_border {
 }
 
 .authoring_method_box3 {
-    background: #EAFAFF;
+    background: #eafaff;
     border-radius: 24px;
     width: 100%;
     max-width: 780px;
@@ -2545,7 +2607,7 @@ footer .doctors__button_border {
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
-    color: #1F2938;
+    color: #1f2938;
 }
 
 .authoring_method_box3 p img {
@@ -2561,7 +2623,7 @@ footer .doctors__button_border {
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
-    color: #686E77;
+    color: #686e77;
 }
 
 .authoring_method_box h3,
@@ -2571,7 +2633,7 @@ footer .doctors__button_border {
     font-size: 32px;
     line-height: 48px;
     letter-spacing: -1.24px;
-    color: #1F2938;
+    color: #1f2938;
 }
 
 .authoring_method_box .auth_met_num {
@@ -2585,11 +2647,11 @@ footer .doctors__button_border {
     display: flex !important;
     align-items: center;
     padding: 14px 40px 16px;
-    border-top: 1px solid #DFE3E4;
+    border-top: 1px solid #dfe3e4;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
-    color: #686E77;
+    color: #686e77;
 }
 
 .authoring_method_box .auth_met_num li:before {
@@ -2600,10 +2662,10 @@ footer .doctors__button_border {
     line-height: 32px;
     /* identical to box height, or 200% */
     letter-spacing: -0.08px;
-    font-feature-settings: 'kern' off;
+    font-feature-settings: "kern" off;
     /* Gray/Style 5 */
-    color: #999EA5;
-    background: #FFFFFF;
+    color: #999ea5;
+    background: #ffffff;
     border-radius: 50px;
     width: 37.55px;
     height: 39px;
@@ -2645,7 +2707,7 @@ footer .doctors__button_border {
     max-width: 510px;
     height: 256px;
     border-radius: 24px;
-    border: 1px solid #DCDCDC;
+    border: 1px solid #dcdcdc;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2658,13 +2720,13 @@ footer .doctors__button_border {
     line-height: 54px;
     text-align: center;
     letter-spacing: -0.36px;
-    font-feature-settings: 'pnum' on, 'lnum' on, 'kern' off;
-    color: #1F2938;
+    font-feature-settings: "pnum" on, "lnum" on, "kern" off;
+    color: #1f2938;
 }
 
 .smile {
     padding: 70px 0 73px;
-    background-color: #EAFAFF;
+    background-color: #eafaff;
     background-image: url("../images/cases/waves.svg");
     background-size: cover;
     text-align: center;
@@ -2683,7 +2745,7 @@ footer .doctors__button_border {
 }
 
 .smile_side ol {
-    background: #FAFAFC;
+    background: #fafafc;
     border-radius: 24px;
     list-style-type: none;
 }
@@ -2691,7 +2753,7 @@ footer .doctors__button_border {
 .smile_side ol li {
     display: flex !important;
     align-items: center;
-    border-bottom: 1px solid #DFE3E4;
+    border-bottom: 1px solid #dfe3e4;
     padding: 10px 27px;
     font-weight: 600;
     font-size: 18px;
@@ -2699,7 +2761,7 @@ footer .doctors__button_border {
     /* identical to box height, or 133% */
     letter-spacing: -0.08px;
     /* Gray/I Style 7 */
-    color: #1F2938;
+    color: #1f2938;
 }
 
 .smile_side ol li:last-child {
@@ -2791,8 +2853,8 @@ footer .doctors__button_border {
 .price_title_p {
     line-height: 24px;
     letter-spacing: 0.1px;
-    font-feature-settings: 'cpsp' on;
-    color: #686E77;
+    font-feature-settings: "cpsp" on;
+    color: #686e77;
     margin-top: 20px;
 }
 
@@ -2811,7 +2873,7 @@ footer .doctors__button_border {
 }
 
 .price_point_box_num {
-    background: #EAFAFF;
+    background: #eafaff;
     border-radius: 12px;
     width: 74px;
     height: 70px;
@@ -2824,19 +2886,19 @@ footer .doctors__button_border {
 .price_point_box_num span {
     width: 37.55px;
     height: 39px;
-    background: #FFFFFF;
+    background: #ffffff;
     border-radius: 50px;
     font-weight: 600;
     font-size: 16px;
     line-height: 32px;
     /* identical to box height, or 200% */
     letter-spacing: -0.08px;
-    font-feature-settings: 'kern' off;
+    font-feature-settings: "kern" off;
     /* Gray/Style 5 */
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #999EA5;
+    color: #999ea5;
 }
 
 .price_point_box p {
@@ -2845,7 +2907,7 @@ footer .doctors__button_border {
     line-height: 21px;
     /* identical to box height, or 131% */
     letter-spacing: -0.36px;
-    color: #999EA5;
+    color: #999ea5;
 }
 
 .price_point_box p img {
@@ -2857,7 +2919,7 @@ footer .doctors__button_border {
 }
 
 .price_table_line {
-    border-top: 1px solid #DFE3E4;
+    border-top: 1px solid #dfe3e4;
     display: flex;
     height: 105px;
     align-items: center;
@@ -2871,11 +2933,11 @@ footer .doctors__button_border {
     /* identical to box height, or 150% */
     letter-spacing: -1.24px;
     /* Gray/I Style 7 */
-    color: #1F2938;
+    color: #1f2938;
 }
 
 .price_table_line h3 span {
-    color: #E31E24;
+    color: #e31e24;
 }
 
 .h2_nowrap {
@@ -2889,13 +2951,13 @@ footer .doctors__button_border {
     /* identical to box height, or 240% */
     letter-spacing: -1.24px;
     text-decoration-line: line-through;
-    color: #686E77;
+    color: #686e77;
     width: 108px;
     margin-right: 27px;
 }
 
 .order_btn {
-    border: 2px solid #E31E24;
+    border: 2px solid #e31e24;
     border-radius: 8px;
     display: flex;
     flex-direction: row;
@@ -2909,7 +2971,7 @@ footer .doctors__button_border {
     /* identical to box height, or 122% */
     letter-spacing: 0.16px;
     background: none;
-    color: #E31E24;
+    color: #e31e24;
 }
 
 .h3_left {
@@ -2923,7 +2985,7 @@ footer .doctors__button_border {
 
 .all_services {
     padding: 60px 0 88px;
-    background: #EAFAFF;
+    background: #eafaff;
 }
 
 .all_services h2,
@@ -2950,7 +3012,7 @@ footer .doctors__button_border {
 .all_services_box {
     display: flex;
     flex-direction: column;
-    background: #FFFFFF;
+    background: #ffffff;
     border-radius: 24px;
     padding: 30px;
     width: 375px;
@@ -2973,8 +3035,8 @@ footer .doctors__button_border {
     line-height: 26px;
     /* or 162% */
     letter-spacing: 0.1px;
-    font-feature-settings: 'cpsp' on;
-    color: #686E77;
+    font-feature-settings: "cpsp" on;
+    color: #686e77;
     text-decoration: none;
     margin-bottom: 11px;
 }
@@ -3005,13 +3067,13 @@ footer .doctors__button_border {
     line-height: 30px;
     /* or 125% */
     letter-spacing: 0.12px;
-    font-feature-settings: 'kern' off;
-    color: #686E77;
+    font-feature-settings: "kern" off;
+    color: #686e77;
     margin-top: 34px;
 }
 
 .care {
-    background-color: #EAFAFF;
+    background-color: #eafaff;
     padding: 60px 0 87px;
     margin-bottom: 100px;
 }
@@ -3040,7 +3102,7 @@ footer .doctors__button_border {
     line-height: 29px;
     letter-spacing: -0.36px;
     /* Gray/I Style 7 */
-    color: #1F2938;
+    color: #1f2938;
     margin-bottom: 20px;
 }
 
@@ -3051,14 +3113,14 @@ footer .doctors__button_border {
     line-height: 24px;
     /* or 133% */
     letter-spacing: 0.12px;
-    font-feature-settings: 'kern' off;
+    font-feature-settings: "kern" off;
     /* Gray/Style 5 */
-    color: #999EA5;
+    color: #999ea5;
 }
 
 .helping {
     position: relative;
-    background: #EAFAFF;
+    background: #eafaff;
     padding: 60px 0 100px;
 }
 
@@ -3074,7 +3136,7 @@ footer .doctors__button_border {
 }
 
 .helping_box {
-    background: #FFFFFF;
+    background: #ffffff;
     border-radius: 24px;
     display: flex;
     align-items: center;
@@ -3099,9 +3161,9 @@ footer .doctors__button_border {
     font-size: 16px;
     line-height: 19px;
     letter-spacing: -0.08px;
-    font-feature-settings: 'kern' off;
+    font-feature-settings: "kern" off;
     /* Gray/I Style 7 */
-    color: #1F2938;
+    color: #1f2938;
 }
 
 .helping_num {
@@ -3110,16 +3172,16 @@ footer .doctors__button_border {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #F0F2F2;
+    background: #f0f2f2;
     border-radius: 999px;
     font-weight: 600;
     font-size: 24px;
     line-height: 32px;
     /* identical to box height, or 133% */
     letter-spacing: -0.08px;
-    font-feature-settings: 'kern' off;
+    font-feature-settings: "kern" off;
     /* Gray/Style 5 */
-    color: #999EA5;
+    color: #999ea5;
 }
 
 .help_flex {
@@ -3140,15 +3202,15 @@ footer .doctors__button_border {
     font-size: 64px;
     line-height: 77px;
     letter-spacing: -0.36px;
-    font-feature-settings: 'pnum' on, 'lnum' on, 'kern' off;
+    font-feature-settings: "pnum" on, "lnum" on, "kern" off;
     /* Gray/I Style 7 */
-    color: #1F2938;
+    color: #1f2938;
     margin-top: 70px;
     position: relative;
 }
 
 .transfer h2 span {
-    color: #1F2938;
+    color: #1f2938;
     position: relative;
     z-index: 30;
 }
@@ -3158,233 +3220,4 @@ footer .doctors__button_border {
     z-index: 3;
     top: -32.5px;
     left: -44px;
-}
-
-
-/* Implants */
-
-.implants_s_banner {
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 44px;
-    /* identical to box height */
-    color: #686E77;
-}
-
-.implants_title_banner {
-    white-space: nowrap;
-}
-
-.implants_p {
-    max-width: 840px;
-    font-weight: 500;
-    font-size: 21px;
-    line-height: 25px;
-    color: #686E77;
-}
-
-.implants_h2 {
-    font-weight: 500;
-    font-size: 64px;
-    line-height: 77px;
-    color: #1F2938;
-}
-
-.timer_p {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 21px;
-    /* or 131% */
-    color: #686E77;
-}
-
-.experience__column span {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 21px;
-    /* or 131% */
-    letter-spacing: -0.36px;
-    color: #1F2938;
-}
-
-.readings_flex {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.readings_content {
-    display: flex;
-}
-
-.readings_box {
-    width: 100%;
-    max-width: 375px;
-    height: 360px;
-    background: #FFFFFF;
-    border-radius: 24px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.readings_box img {
-    margin-bottom: 20px;
-}
-
-.readings_box p {
-    text-align: center;
-}
-
-.r_box {
-    margin-right: 30px;
-}
-
-.readings_titile {
-    max-width: 446px;
-}
-
-.readings_titile p {
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 30px;
-    letter-spacing: 0.12px;
-    font-feature-settings: 'kern' off;
-    color: #686E77;
-}
-
-.good_method .red_btn {
-    margin: 0 auto;
-    margin-top: 40px;
-    width: 345px;
-    margin-bottom: 100px;
-}
-
-.core_p_title {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 24px;
-    text-align: center;
-    letter-spacing: 0.1px;
-    font-feature-settings: 'cpsp' on;
-    color: #686E77;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 845px;
-    margin: 0 auto;
-    margin-bottom: 30px;
-}
-
-.care__column_implants p {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 24px;
-    /* or 133% */
-    letter-spacing: 0.1px;
-    font-feature-settings: 'cpsp' on;
-    color: #686E77;
-    max-width: 640px !important;
-}
-
-.care__column_implants h4 {
-    max-width: 600px !important;
-}
-
-.reliability_implants .reliability_box div {
-    width: 57px;
-    height: 50px;
-}
-
-.reliability_implants .reliability_box {
-    margin-bottom: 15px;
-    height: 50px;
-}
-
-.reliability_implants .reliability_box p {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 30px;
-    /* identical to box height, or 167% */
-    letter-spacing: -0.36px;
-    color: #1F2938;
-    white-space: nowrap;
-}
-
-.shum_content {
-    display: flex;
-}
-
-.shum_box {
-    width: 240px;
-    height: 248px;
-    background: #FFFFFF;
-    border-radius: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.implant_shum {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 135px;
-}
-
-.shum_box {
-    text-align: center;
-    margin-left: 30px;
-}
-
-.shum_box h2 {
-    font-weight: 600;
-    font-size: 96px;
-    /* or 25% */
-    text-align: center;
-    letter-spacing: 0.12px;
-    font-feature-settings: 'kern' off;
-    color: #1F2938;
-    line-height: 72px;
-}
-
-.shum_box h3 {
-    font-weight: 600;
-    font-size: 36px;
-    /* identical to box height, or 67% */
-    text-align: center;
-    letter-spacing: 0.12px;
-    font-feature-settings: 'kern' off;
-    color: #E31E24;
-    margin-top: 5px;
-    margin-bottom: 30px;
-}
-
-.shum_box p {
-    margin: 0;
-    padding: 0;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 24px;
-    /* or 133% */
-    text-align: center;
-    letter-spacing: 0.12px;
-    font-feature-settings: 'kern' off;
-    color: #686E77;
-}
-
-.shum_box p span {
-    font-weight: 600;
-    color: #1F2938;
-}
-
-.partners {
-    background: #EAFAFF;
-    padding: 80px 0 100px;
-    margin-bottom: 100px;
-}
-
-.partner-slider {
-    margin-top: 50px;
 }
