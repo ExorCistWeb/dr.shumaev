@@ -139,7 +139,22 @@ if (hamburger && menuOverlay) {
   });
 }
 
-const columnTitles = document.getElementsByClassName('footer__column')[0].getElementsByTagName('h5');
+const columnTitles = document.querySelectorAll('.footer__column h5');
+columnTitles.forEach((title) => {
+  title.addEventListener('click', () => {
+    const column = title.parentNode;
+    const links = column.querySelectorAll('a');
+    if (links[0].style.display === 'none') {
+      links.forEach((link) => {
+        link.style.display = 'block';
+      });
+    } else {
+      links.forEach((link) => {
+        link.style.display = 'none';
+      });
+    }
+  });
+});
 
 for (const btn of submitBtns) {
   btn.addEventListener("click", (event) => {
