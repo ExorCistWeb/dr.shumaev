@@ -3724,3 +3724,16 @@ footer .doctors__button_border {
     height: 1.71px;
     background-color: #686E77;
 }
+
+.turnkey_impl_mt100 {
+    margin-top: 100px;
+}
+
+.s_rel {
+    position: relative;
+}
+
+.s_rel s {
+    position: absolute;
+    left: -130px;
+}
