@@ -27,14 +27,14 @@ try {
 
     // Настройки вашей почты
     $mail->Host       = 'smtp.yandex.ru'; // SMTP сервера вашей почты
-    $mail->Username   = 'login@mail.ru'; // Логин на почте
-    $mail->Password   = 'pas'; // Пароль на почте
+    $mail->Username   = 'lsunkey@yandex.ru'; // Логин на почте
+    $mail->Password   = 'duklidlkluuwhkzg'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('куда@mail.ru'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('lsunkey@yandex.ru'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('atv@prokatavt.ru');  
+    $mail->addAddress('lsun1997@yandex.ru');  
 
 // Отправка сообщения
 $mail->isHTML(true);

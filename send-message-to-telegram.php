@@ -2,8 +2,8 @@
 $msgs = [];
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
  
-    $token = "token";
-    $chat_id = "id";
+    $token = "5650176401:AAGVZ2CUhp2fh06D5Bp6sjngZalE_ZU0Y1w";
+    $chat_id = "-1001732467219";
  
     if (!empty($_POST['phone'])){
         $bot_url = "https://api.telegram.org/bot{$token}/";
@@ -14,6 +14,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $phone = "Телефон: " . "%2B" . strip_tags($_POST['phone']) . "%0A";
           }
         }
+        if (isset($_POST['name'])) {
+          if (!empty($_POST['name'])){
+            $phone = "Имя: " . "%2B" . strip_tags($_POST['name']) . "%0A";
+          }
+        }
  
         if (isset($_POST['theme'])) {
           if (!empty($_POST['theme'])){
@@ -21,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           }
         }
         // Формируем текст сообщения
-        $txt = $phone . $theme;
+        $txt = $name . $phone . $theme;
  
         $sendTextToTelegram = file_get_contents("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$txt}");
         if ($output && $sendTextToTelegram) {

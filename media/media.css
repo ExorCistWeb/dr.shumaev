@@ -53,6 +53,8 @@
     .exactly__item{width: 100%;}
 
     .authoring_method_box{width: 100%;}
+
+    .repair .damon-slider img {width: 100%;}
 }
 
 @media (max-width: 1600px) {
@@ -67,6 +69,7 @@
     header .tel_form {
         margin-left: 0;
     }
+    .doctor__image{height: auto;}
 }
 
 @media (max-width: 1428px) {
@@ -79,6 +82,8 @@
     .price_warn_side_box{max-width: 17%;}
 
     .initial_reception>img{width: 47.5%;}
+    .swiper-button-prev, .swiper-rtl .swiper-button-next{right: unset!important;left: 20px!important;}
+    .swiper-button-next, .swiper-rtl .swiper-button-prev{left: unset!important;right: 20px!important;}
 }
 
 @media (max-width:1200px) {
@@ -100,6 +105,8 @@
     .tel_form_content h3{font-size:20px;line-height:24px;}.tel_form_content p{margin:3px 0 4px 0;}.tel_form_content p, .tel_form_content button{font-size:12px;line-height: 15px;}
     .hamburger{display:flex;}
 
+    .swiper-brackets .swiper-slide{background-position-x: 75%;}
+    .swiper-children .swiper-slide{background-position-x: 89%;}
     .products{flex-direction:column;}
     .products .swiper-usual{width: 100%;}
     .products .swiper-wrapper{justify-content: flex-start;}
@@ -440,7 +447,7 @@
     .advantages-grid{
         display: flex;grid-gap: unset;flex-wrap: wrap;row-gap: 16px;column-gap:13px;
     }
-    .advantage{width: 25%;
+    .advantage{width: 32%;
         padding:18px 0 8px 0;
     }
     .advantage p{
@@ -556,9 +563,57 @@
     .price_table_line h3{font-size: 20px;}.price_table_line h3 span{font-size: 20px;}.price_table_line h3 s{font-size: 17px;}
     .price_table_line h3{width: 31%}
     .order_btn{width: 16.666%;}
+
+    .footer__column h5{cursor: pointer;}
+
+    .swiper-header h2{font-size: 36px;line-height: 44px;}
+
+    .implantation p{font-size: 14px;}
+    .implantation-grid{margin-top: 20px;}
+    .implantation__footer{height: 95px;}
+
+    .ceramics-red{font-size: 20px;}
+    .ceramics li, .ceramics-red p{font-size: 14px;}
+    .ceramics-red{margin-bottom: 28px;}
+    .ceramics .doctors__button_fill{width: 91%;}
+    .ceramics__column:nth-child(1){width: 163%;}
+    
+    .unit_box{width: 21%;}
+    .unit_box img{width: 100%;}
+    .initial_box .unit_box{min-width: unset;}
+
+    .advantages-grid{width: 100%;}
+
+    .cases.advantages h2 br{display: none;}
+
+    .swiper-children .swiper-slide h2{width: 76%;}
+
+    .modal-content{width: 63%;}
+
+    .consultation_form p{margin-top: 10px;width: 47%;}.form_cons{margin-top: 20px;}
+
+    .rating{margin-bottom: 0;}
+
+    .payment-form .person_svg{right: 6.99%!important;}
+
+    .tax-form input:first-child, .tax-form input:nth-child(2) {width: 100%;}
+    .tax-form .form_cons{width: 62.5%;}
+
+    .footer__row-btn{
+        display: flex
+    }
+    .experience{flex-wrap: wrap;row-gap: 30px;justify-content: center;column-gap:7px;}
+    .experience-lots .experience__item{width: 32.5%;}.experience__item{max-width: unset;}
 }
 
 @media (max-width:576px){
+    .swiper-brackets h2 br {display: none;}
+    .swiper-header h2{font-size: 32px;line-height: 39px;}
+    .swiper-body-description{font-size: 17px;}
+    .swiper-brackets.swiper-header .swiper-button{width: 100%;}
+    .consultation_form p{margin-top: 10px;}.form_cons input{margin-top: 20px;}
+    .tax-form input:nth-child(2){width: 100%;}
+    .swiper-header .swiper-button a{font-size: 14px;line-height: 120%;}
     .products__swiper .swiper-wrapper, .rating .swiper-wrapper{overflow: unset;}
     .rate.swiper-slide{width: 69%;}
     .patients .swiper-wrapper, .doctors .swiper-wrapper, .clinic .swiper-wrapper, .repair .swiper-wrapper{justify-content: center;}
@@ -690,6 +745,7 @@
     .transfer h2{
         font-size: 24px;margin-top: 43px;
     }
+    .border_text{width: 61.333%;}
     .border_text{width: 53.333%;}
     .clients-grid{flex-direction: column;}.client{max-width:100%;width: 100%;margin-right: 0;margin-bottom: 20px;}
     .clients .wrapper{padding-right: 20px;}
@@ -698,7 +754,8 @@
 
     .repair .swiper-slide{width: 75%!important;}
 
-    .all_services h2, .care h2, .helping h2{text-align: left;}
+    .all_services h2, .care h2{text-align: left;}
+    .helping h2{line-height: 117%;}
 
     .care_gap{
         flex-direction: column;
@@ -736,7 +793,7 @@
     .create-info{padding: 0;}
 
     .payment-form h2{font-size: 22px;}.payment-form h3{font-size: 26px;}
-    .payment-form .person_svg{right: 50%;
+    .payment-form .person_svg{right: 50%!important;
         width: 100%;}
 
     .stripe-paragraph{padding-left: 20px;padding-right:20px;}
@@ -768,4 +825,35 @@
 
     .initial_reception{flex-direction: column-reverse;}
     .initial_reception>img{width: 100%;margin-bottom: 19.86px;}
+
+    .swiper-header .swiper-slide{padding:39px 20px 74px 20px}
+    .rate.swiper-slide{width: 100%!important;}
+
+    .rating{margin-bottom: 0;}
+    .rate.swiper-slide{height: auto;}
+    .swiper-children .swiper-wrapper,.swiper-veneers .swiper-wrapper{overflow: unset;}
+
+    .modal-content{width: 90%;}
+    .swiper-backface-hidden .swiper-slide.doctor{margin: 0 10px!important;}
+
+    .consultation_form.children-form.consultation_form p{width: 61%;}
+    .tax-form h2{font-size: 23px;}
+    .tax-form p, .tax-form .form_cons{width: 100%;}
+    .tax-form input{margin: 5px 0;}
+
+    .payment-form .red_btn{width: 100%;height: 48px;font-size: 14px;}
+    .payment-form p{width: 100%;}
+    .experience-lots .experience__item{width: 100%;}
+}
+
+@media (max-width:335px){
+    header .nav-link{width: 51%;margin-right: 0;}
+    .transfer h2{
+        font-size: 23px;margin-top: 43px;
+    }
+    .border_text{width: 61.333%;}
+    .reviews__button{padding-left: 28px;padding-right: 28px;}.reviews__button:nth-last-child(1){padding-left: 41px;padding-right: 41px;}
+    .footer__row:last-child p{text-align: center;}
+
+    .payment-form h2{font-size: 20px;}.payment-form h3{font-size: 24px;}
 }

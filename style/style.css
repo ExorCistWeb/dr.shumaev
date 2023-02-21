@@ -76,6 +76,8 @@ h2 span {
     margin-bottom: 16px;
 }
 
+.modal{overflow: hidden;}
+
 .pre-nav {
     background-image: url("../images/pre-nav/advertisement.svg");
     background-size: contain;
@@ -1625,10 +1627,14 @@ footer {
     padding-top: 43px;
 }
 
+.footer__column {position: relative;}
+
 .footer__row:first-child .footer__column:last-child a {
     line-height: normal;
     margin-bottom: 16px;
+    position: relative;
 }
+.footer__row-btn{position: absolute;}.footer__row-btn span:first-child{transform: rotate(90deg);position: absolute;}
 
 .footer__column h5 {
     font-size: 20px;
@@ -3489,19 +3495,19 @@ footer .doctors__button_border {
 .modal {
     display: none;
     position: fixed;
-    z-index: 999;
+    z-index: 999999999999999;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto;
+    overflow: hidden;
     background-color: rgba(0,0,0,0.4);
   }
   
   /* Стили для модальных окон */
   .modal-content {
     background-color: #F0F2F2;
-    margin: 15% auto;
+    margin: 1% auto;
     padding: 80px 45px 98px 106px;
     border-radius: 24px;
     width: 40.63%;
@@ -3512,10 +3518,15 @@ footer .doctors__button_border {
   
   /* Стили для кнопки закрытия */
   .close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+    color: #fff;
+    position: absolute;top: 22px;right: 20px;
+    font-size: 37px;
+    font-weight: 400;
+    width: 43px;height: 43px;
+    background-color: #BFC4CD;
+    border-radius:100%;
+    display: flex;align-items: center;justify-content: center;text-align: center;
+    cursor:pointer;
   }
   
   .close:hover,
@@ -3579,3 +3590,65 @@ footer .doctors__button_border {
         background-color:#E31E24!important;
         cursor:pointer;
     }
+    /* Скрыть менюшку при загрузке страницы */
+.menu-overlay {
+    visibility: hidden;
+  }
+  
+  /* Показать менюшку при клике на гамбургер */
+  .menu-overlay.active{
+    visibility:visible;
+    height: auto;
+    transition: .35s all;
+  }
+  
+  /* Стили для менюшки */
+  .menu-overlay {
+    transition: .35s all;
+    top: 16%;
+    left: 0;
+    width: 100%;height: 0.001px;
+    background-color: #fff;
+    z-index: 10;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .menu-overlay a {
+    display: block;
+    font-weight: 600;
+font-size: 20px;
+line-height: 19px;
+/* identical to box height, or 95% */
+
+letter-spacing: -0.08px;
+font-feature-settings: 'cpsp' on;
+    text-decoration: none;
+    margin-bottom: 10px;
+    border-top:1px solid #686E77;
+    padding:18.5px 0 19.5px 0;
+    color: #1F2938;
+  }
+
+  /* Скрыть модальное окно по умолчанию */
+#result-modal {
+  display: none;
+  position: fixed;
+  z-index:9999999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.footer__row-btn{
+    display: none;justify-content: center;align-items: center;
+    width: 18px;height:18px;
+    position: absolute;right: 0;top: 32.5px;transform: translateY(-50%);
+}.footer__row-btn span{
+    display: block;
+    width: 100%;height:1.71px;
+    background-color: #686E77;
+}

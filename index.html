@@ -27,29 +27,39 @@
         <header class="d_flex">
             <a href="#" class="logo"><img src="images/products/logo.svg" alt=""></a>
             <div class="nav-link d_flex">
-                <a href="">Все услуги</a>
-                <a href="">Цены</a>
-                <a href="">До и после</a>
-                <a href="">Пациенты</a>
-                <a href="">Наши врачи</a>
-                <a href="">Отзывы</a>
-                <a href="">Из других городов</a>
-                <div class="soc_link d_flex">
-                    <a href=""><img src="images/products/icon/insta.svg" alt=""></a>
-                    <a href=""><img src="images/products/icon/telegram.svg" alt=""></a>
-                    <a href=""><img src="images/products/icon/vk.svg" alt=""></a>
+              <a href="">Все услуги</a>
+              <a href="">Цены</a>
+              <a href="">До и после</a>
+              <a href="">Пациенты</a>
+              <a href="">Наши врачи</a>
+              <a href="">Отзывы</a>
+              <a href="">Из других городов</a>
+              <div class="soc_link d_flex">
+                <a href=""><img src="images/products/icon/insta.svg" alt=""></a>
+                <a href=""><img src="images/products/icon/telegram.svg" alt=""></a>
+                <a href=""><img src="images/products/icon/vk.svg" alt=""></a>
+              </div>
+              <div class="tel_form ">
+                <img src="images/products/icon/tel.svg" alt="">
+                <div class="tel_form_content">
+                  <h3>8 800 250 59 32</h3>
+                  <p>Ежедневно с 9:00 до 21:00</p>
+                  <button id="form-modal-callback-btn" onclick="openModal('form-modal-callback')">Заказать обратный звонок</button>
                 </div>
-                <div class="tel_form ">
-                    <img src="images/products/icon/tel.svg" alt="">
-                    <div class="tel_form_content">
-                        <h3>8 800 250 59 32</h3>
-                        <p>Ежедневно с 9:00 до 21:00</p>
-                        <button id="form1-button">Заказать обратный звонок</button>
-                    </div>
-                </div>
+              </div>
             </div>
             <div class="hamburger"><span class="hamburger__line"></span><span class="hamburger__line"></span><span class="hamburger__line"></span></div>
-        </header>
+          </header>
+          
+          <div class="menu-overlay">
+            <a href="">Все услуги</a>
+            <a href="">Цены</a>
+            <a href="">До и после</a>
+            <a href="">Пациенты</a>
+            <a href="">Наши врачи</a>
+            <a href="">Отзывы</a>
+            <a href="">Из других городов</a>
+          </div>
 
         <div class="products">
             <div class="swiper swiper-usual">
@@ -270,10 +280,9 @@
         <div class="consultation_form">
             <h2>Получите бесплатную <br>онлайн консультацию </h2>
             <p>Текст подзаголовка выглядит примерно так</p>
-
-            <form action="" class="form_cons">
-                <input type="text" placeholder="Мобильный телефон">
-                <button type="submit" class="red_btn">Получить консультацию</button>
+            <form action="" class="form_cons" enctype="multipart/form-data" method="post" onsubmit="send(event, 'send.php')">
+                <input type="tel" placeholder="Мобильный телефон" name="phone" required>
+                <button type="submit" class="red_btn submit-btn">Получить консультацию</button>
             </form>
             <span class="agreement">* Нажимая на кнопку, вы выражаете согласие с политикой конфиденциальностии правилами
                 обработки персональных данных</span>
@@ -295,10 +304,10 @@
 
                             <p class="doctors__red-text">Опыт работы: 8 лет</p>
 
-                            <a class="doctors__button_fill">
+                            <a class="doctors__button_fill" onclick="openModal('form-modal-rec')">
                                 Запись онлайн
                             </a>
-                            <a class="doctors__button_border">Отзывы</a>
+                            <a class="doctors__button_border" >Отзывы</a>
                         </div>
 
                         <div class="doctor__footer">
@@ -346,7 +355,7 @@
 
                             <p class="doctors__red-text">Опыт работы: 15 лет</p>
 
-                            <a class="doctors__button_fill">
+                            <a class="doctors__button_fill" onclick="openModal('form-modal-rec')">
                                 Запись онлайн
                             </a>
                             <a class="doctors__button_border">Отзывы</a>
@@ -397,7 +406,7 @@
 
                             <p class="doctors__red-text">Опыт работы: 5 лет</p>
 
-                            <a class="doctors__button_fill">
+                            <a class="doctors__button_fill" onclick="openModal('form-modal-rec')">
                                 Запись онлайн
                             </a>
                             <a class="doctors__button_border">Отзывы</a>
@@ -447,7 +456,7 @@
 
                             <p class="doctors__red-text">Опыт работы: 15 лет</p>
 
-                            <a class="doctors__button_fill">
+                            <a class="doctors__button_fill" onclick="openModal('form-modal-rec')">
                                 Запись онлайн
                             </a>
                             <a class="doctors__button_border">Отзывы</a>
@@ -497,7 +506,7 @@
 
                             <p class="doctors__red-text">Опыт работы: 8 лет</p>
 
-                            <a class="doctors__button_fill">
+                            <a class="doctors__button_fill" onclick="closeModal('form-modal-rec')">
                                 Запись онлайн
                             </a>
                             <a class="doctors__button_border">Отзывы</a>
@@ -894,7 +903,7 @@
                 </div>
             </div>
 
-            <a href="" class="doctors__button_border">
+            <a class="doctors__button_border" onclick="openModal('form-modal-callback')">
                 Обратная связь
             </a>
         </div>
@@ -916,6 +925,7 @@
                 <a href="">Наши врачи</a>
                 <a href="">Отзывы</a>
                 <a href="">Из других городов</a>
+                <div class="footer__row-btn"><span></span><span></span></div>
             </div>
 
             <div class="footer__column">
@@ -924,6 +934,7 @@
                 <a href="">Иплантанты зубов</a>
                 <a href="">Протезирование зубов</a>
                 <a href="">Реставрация зубов</a>
+                <div class="footer__row-btn"><span></span><span></span></div>
             </div>
 
             <div class="footer__column">
@@ -932,6 +943,7 @@
                 <a href="">Имплантация All on 6</a>
                 <a href="">Несъемные протезы</a>
                 <a href="">Съемные протезы</a>
+                <div class="footer__row-btn"><span></span><span></span></div>
             </div>
 
             <div class="footer__column">
@@ -940,6 +952,7 @@
                 <a href="">Удаление зуба</a>
                 <a href="">Лечение десен</a>
                 <a href="">Чистота зубов</a>
+                <div class="footer__row-btn"><span></span><span></span></div>
             </div>
 
             <div class="footer__column">
@@ -948,6 +961,7 @@
                 <a href="">Брекеты</a>
                 <a href="">Отбеливание зубов</a>
                 <a href="">Чистка Air Flow</a>
+                <div class="footer__row-btn"><span></span><span></span></div>
             </div>
 
             <div class="footer__column">
@@ -959,7 +973,8 @@
                 <a href="">
                     <img src="./images/footer/geo.svg" alt=""> г.Краснодар,
                     <br>ул. Орджоникидзе, 2</a>
-                <a class="doctors__button_border">Заказать обратный звонок</a>
+                <a class="doctors__button_border" onclick="openModal('form-modal-callback')">Заказать обратный звонок</a>
+                <div class="footer__row-btn"><span></span><span></span></div>
             </div>
         </div>
         <div class="footer__row">
@@ -977,24 +992,83 @@
         </div>
     </footer>
 
-    <div id="form1-modal" class="modal">
+    <div id="form-modal-callback" class="modal form-modal">
         <div class="modal-content">
           <span class="close">&times;</span>
-          <p class="telegram__form-message"></p>
-          <h2>Форма 1</h2>
+          
+          <h2>Заказать звонок</h2>
           <p>Введите свои данные:</p>
-          <form id="form1" class="form telegram__form" enctype="multipart/form-data" method="post" onsubmit="send(event, 'send.php')">
-            <input type="text" id="name" name="name" placeholder="Имя">
-            <input type="tel" id="phone" name="phone" placeholder="Номер телефона">
-            <input type="submit" value="Отправить" class="form__btn">
+          <form id="form1" class="form telegram__form" autocomplete="off" enctype="multipart/form-data" method="post"  onsubmit="send(event, 'send.php', 'send-messgae-to-telegram')">
+            <div class="preloader"></div>
+            <p class="telegram__form-message"></p>
+            <input type="text" id="name" name="name" placeholder="Имя" required>
+            <input type="tel" id="phone" name="phone" placeholder="Номер телефона" required>
+            <input name="theme" type="hidden" class="telegram__form-input telegram__form-input_theme"
+            value="test Заявка с сайта drshumaev">
+            <input type="submit" value="Отправить" class="form__btn submit-btn">
           </form>
         </div>
       </div>
-      
 
+      <div id="form-modal-rec" class="modal form-modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div class="preloader"></div>
+          <p class="telegram__form-message"></p>
+          <h2>Запишитесь на приём</h2>
+          <p>Заполните простую форму, и наш специалистсвяжется с Вами в ближайшее время.</p>
+          <form id="form1" class="form telegram__form" enctype="multipart/form-data" method="post" onsubmit="send(event, 'send.php', this)">
+            <input type="text" id="name" name="name" placeholder="Имя" required>
+            <input type="tel" id="phone" name="phone" placeholder="Номер телефона" required>
+            <input type="submit" value="Отправить" class="form__btn submit-btn">
+          </form>
+        </div>
+      </div>
+
+      <div id="result-modal" class="modal form-modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p class="modal-message"></p>
+        </div>
+      </div>
+      
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./script/telegramform.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/tomik23/circular-progress-bar@1.1.9/dist/circularProgressBar.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./script/script.js"></script>
+    <script>new Swiper(".patients-slider", {
+        autoplay: {
+          delay: 3500,
+          disableOnInteraction: false,
+        },
+        slidesPerView: 4.3,
+        loop: true,
+      
+        spaceBetween: 14,
+        slidesPerGroup: 1,
+        centeredSlides: true,
+      
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          375: {
+            slidesPerView: 1.3,
+          },
+          768: {
+            slidesPerView: 3.3,
+          },
+          1790: {
+            slidesPerView: 4,
+          },
+          1920: {
+            slidesPerView: 4.3,
+          },
+        },
+      });
+      </script>
 </body>
 
 </html>
