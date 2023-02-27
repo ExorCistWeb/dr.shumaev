@@ -3737,3 +3737,18 @@ footer .doctors__button_border {
     position: absolute;
     left: -130px;
 }
+
+
+/* Эффекты */
+
+.index_title a {
+    transition: background 0.5s ease;
+}
+
+.index_title a:hover {
+    background: radial-gradient(70.54% 70.54% at 50% 100%, #CD1A1F 76.55%, #E31E24 76.56%), #CD1A1F;
+}
+
+.index_title a:active {
+    background: #CD1A1F;
+}
