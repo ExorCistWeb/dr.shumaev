@@ -3738,6 +3738,17 @@ footer .doctors__button_border {
     left: -130px;
 }
 
+.what_is_it_block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.what_is_it_text {
+    max-width: 720px;
+    margin-right: 20px;
+}
+
 
 /* Эффекты */
 
