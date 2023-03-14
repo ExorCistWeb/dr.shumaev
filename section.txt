@@ -1,0 +1,30 @@
+Главная
+experience => опыт(Карточки)
+patients => Наши пациенты довольны
+facts => Топ 6 фактов о нас
+consultation_form => Консультация (1)
+doctors => Наши врачи
+clients => Нам доверяют тысячи пациентов
+reviews => Отзывы наших пациентов
+clinic => В нашей клинике всегда чисто, уютно и комфортно
+facts => Топ
+facts => Топ
+facts => Топ
+facts => Топ
+facts => Топ
+
+facts => Топ
+facts => Топ
+facts => Топ
+facts => Топ
+facts => Топ
+
+facts => Топ
+facts => Топ
+facts => Топ
+facts => Топ
+
+facts => Топ
+facts => Топ
+facts => Топ
+facts => Топ
