@@ -4,6 +4,10 @@
     margin: 0;
 }
 
+a {
+    cursor: pointer;
+}
+
 body {
     max-width: 1920px;
     margin: auto;
@@ -3603,10 +3607,10 @@ footer .doctors__button_border {
 .modal-content {
     background-color: #f0f2f2;
     margin: 1% auto;
-    padding: 80px 45px 98px 106px;
+    padding: 80px 105px 90px;
     border-radius: 24px;
     width: 40.63%;
-    max-width: 600px;
+    max-width: 780px;
     z-index: 9999;
     position: relative;
 }
@@ -3630,6 +3634,7 @@ footer .doctors__button_border {
     justify-content: center;
     text-align: center;
     cursor: pointer;
+    padding-bottom: 5px;
 }
 
 .close:hover,
@@ -3661,6 +3666,10 @@ footer .doctors__button_border {
     margin-top: 10px;
 }
 
+.modal p span {
+    white-space: nowrap !important;
+}
+
 .form {
     display: flex;
     flex-direction: column;
@@ -3673,6 +3682,13 @@ footer .doctors__button_border {
     border: none;
     border-radius: 12px;
     padding: 20px 29px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height, or 133% */
+    letter-spacing: 0.12px;
+    font-feature-settings: "kern" off;
+    color: rgb(104, 110, 119);
 }
 
 .form input:nth-last-child(1) {
@@ -3691,7 +3707,7 @@ footer .doctors__button_border {
 
 .form__btn {
     width: 50%;
-    color: #fff;
+    color: #fff !important;
     background-color: #e31e24 !important;
     cursor: pointer;
 }

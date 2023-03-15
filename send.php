@@ -34,7 +34,7 @@ try {
     $mail->setFrom('lsunkey@yandex.ru'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('lsun1997@yandex.ru');  
+    $mail->addAddress('vladimirovich.aleksei.ru@gmail.com');  
 
 // Отправка сообщения
 $mail->isHTML(true);

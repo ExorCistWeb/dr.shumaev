@@ -118,6 +118,7 @@ closeModalButton.addEventListener("click", function() {
     form1Modal.style.display = "none";
 });
 
+
 document.getElementById('form1').addEventListener('submit', function(event) {
     send(event, "form1");
 });

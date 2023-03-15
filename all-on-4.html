@@ -1,22 +1,18 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang='ru'>
 
 <head>
     <meta charset='UTF-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title>Hello World!</title>
+    <title>Dr.Shumaev</title>
     <!-- styles -->
-    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/reseter.css' />
     <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.2/dist/accordion.min.css">
-
     <link rel='stylesheet' href='style/style.css'>
     <link rel='stylesheet' href='media/media.css'>
-    <!-- styles -->
-
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/reseter.css' />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-
-
+    <!-- styles -->
     <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900" rel="stylesheet" />
 </head>
 
@@ -28,26 +24,24 @@
 
     <div class="wrapper">
         <header class="d_flex">
-            <a href="#" class="logo"><img src="images/products/logo.svg" alt=""></a>
+            <a href="./index.html" class="logo"><img src="images/products/logo.svg" alt=""></a>
             <div class="nav-link d_flex">
-                <a href="">Все услуги</a>
-                <a href="">Цены</a>
-                <a href="">До и после</a>
-                <a href="">Пациенты</a>
-                <a href="">Наши врачи</a>
-                <a href="">Отзывы</a>
-                <a href="">Из других городов</a>
+                <a href="./index.html">Главная</a>
+                <a href="./services.html">Все услуги</a>
+                <a href="#reviews">Отзывы</a>
+                <a href="#footer">Контакты</a>
                 <div class="soc_link d_flex">
-                    <a href=""><img src="images/products/icon/insta.svg" alt=""></a>
-                    <a href=""><img src="images/products/icon/telegram.svg" alt=""></a>
-                    <a href=""><img src="images/products/icon/vk.svg" alt=""></a>
+                    <a href="https://instagram.com/dr_shumaev?igshid=YmMyMTA2M2Y="><img src="images/products/icon/insta.svg" alt=""></a>
+                    <a href="https://t.me/dr_shumaev"><img src="images/products/icon/telegram.svg" alt=""></a>
+                    <a href="https://vk.com/dr.shumaevstomatolog"><img src="images/products/icon/vk.svg" alt=""></a>
                 </div>
                 <div class="tel_form ">
                     <img src="images/products/icon/tel.svg" alt="">
                     <div class="tel_form_content">
-                        <h3>8 800 250 59 32</h3>
+                        <h3><a href="tel:+78802505932">8 800 250 59 32</a></h3>
                         <p>Ежедневно с 9:00 до 21:00</p>
-                        <button id="form1-button" onclick="openModal('form-modal-callback')">Заказать обратный звонок</button>
+                        <button id="form-modal-callback-btn" onclick="openModal('form-modal-callback')">Заказать
+                            обратный звонок</button>
                     </div>
                 </div>
             </div>
@@ -55,13 +49,8 @@
         </header>
 
         <div class="menu-overlay">
-            <a href="">Все услуги</a>
-            <a href="">Цены</a>
-            <a href="">До и после</a>
-            <a href="">Пациенты</a>
-            <a href="">Наши врачи</a>
-            <a href="">Отзывы</a>
-            <a href="">Из других городов</a>
+            <a href="./services.html">Все услуги</a>
+            <a href="./index.html">Отзывы</a>
         </div>
 
 
@@ -383,53 +372,55 @@
             </div>
         </div>
     </div>
-    <div class="wrapper ">
+    <section id="reviews">
+        <div class="wrapper wrapper__reviews">
+            <div class="reviews">
+                <h2>Отзывы наших пациентов</h2>
 
-        <div class="reviews ">
-            <h2>Отзывы наших пациентов</h2>
-
-            <div class="reviews-buttons ">
-                <div>
-                    <div class="reviews__button reviews__button_active ">
-                        Смотреть
-                    </div>
-                    <div class="reviews__button reviews__button_disabled ">
-                        Читать
-                    </div>
+                <!-- <div class="reviews-buttons">
+            <div>
+                <div class="reviews__button reviews__button_active">
+                    Смотреть
                 </div>
-
-                <div>
-                    <a href=" ">
-                            Все отзывы ❯
-                        </a>
+                <div class="reviews__button reviews__button_disabled">
+                    Читать
                 </div>
             </div>
 
-            <div class="reviews-wrapper grid ">
-                <div class="review " style="background-image: url( './images/reviews/1.png'); ">
-                    <button class="review__play-button ">
-                            <img src="./images/reviews/play-ico.svg " alt=" ">
-                        </button>
-                </div>
-                <div class="review " style="background-image: url( './images/reviews/2.png'); ">
-                    <button class="review__play-button ">
-                            <img src="./images/reviews/play-ico.svg " alt=" ">
-                        </button>
-                </div>
-                <div class="review " style="background-image: url( './images/reviews/3.png'); ">
-                    <button class="review__play-button ">
-                            <img src="./images/reviews/play-ico.svg " alt=" ">
-                        </button>
-                </div>
-                <div class="review " style="background-image: url( './images/reviews/4.png'); ">
-                    <button class="review__play-button ">
-                            <img src="./images/reviews/play-ico.svg " alt=" ">
-                        </button>
+            <div>
+                <a href="./404.html">
+                    Все отзывы ❯
+                </a>
+            </div>
+        </div> -->
+
+                <div class="reviews-wrapper grid">
+                    <div class="review" style="background-image: url('./images/reviews/1.png');">
+                        <button class="review__play-button">
+                    <img src="./images/reviews/play-ico.svg" alt="">
+                </button>
+                    </div>
+                    <div class="review" style="background-image: url('./images/reviews/2.png');">
+                        <button class="review__play-button">
+                    <img src="./images/reviews/play-ico.svg" alt="">
+                </button>
+                    </div>
+                    <div class="review" style="background-image: url('./images/reviews/3.png');">
+                        <button class="review__play-button">
+                    <img src="./images/reviews/play-ico.svg" alt="">
+                </button>
+                    </div>
+                    <div class="review" style="background-image: url('./images/reviews/4.png');">
+                        <button class="review__play-button">
+                    <img src="./images/reviews/play-ico.svg" alt="">
+                </button>
+                    </div>
                 </div>
             </div>
+
+
         </div>
-
-    </div>
+    </section>
     <div class="repair all_on_repair ">
         <div class="wrapper ">
             <h2>
@@ -1066,76 +1057,121 @@
         </div>
     </div>
 
-    <footer>
-        <div class="footer__row ">
-            <div class="footer__column ">
-                <h5>О компании</h5>
-                <a href=" ">Цены</a>
-                <a href=" ">До и после</a>
-                <a href=" ">Пациенты</a>
-                <a href=" ">Наши врачи</a>
-                <a href=" ">Отзывы</a>
-                <a href=" ">Из других городов</a>
+    <section id="footer">
+        <div class="map">
+            <div class="map_absolute">
+                <h2>
+                    Контакты
+                </h2>
+
+                <div class="map-info">
+                    <div class="info__item">
+                        <img src="./images/map/watch.svg" alt=""> пн - вс 09:00 - 20:00
+                    </div>
+                    <div class="info__item">
+                        <img src="./images/map/telephone.svg" alt=""><a href="https://yandex.ru/maps/-/CCUOUKvK-B"> г.Краснодар, ул. Орджоникидзе, 2</a>
+                    </div>
+                    <div class="info__item">
+                        <img src="./images/map/telegram.svg" alt=""><a href="https://t.me/dr_shumaev">@dr_shumaev</a>
+                    </div>
+                    <div class="info__item">
+                        <img src="./images/map/whatsapp.svg" alt=""><a href="https://wa.me/79182047317">+7 (918) 204-73-17</a>
+                    </div>
+                    <div class="info__item">
+                        <img src="./images/map/geo.svg" alt=""> <a href="tel:+78612983414">+7 (861) 298-34-14</a>
+                    </div>
+                </div>
+
+                <a class="doctors__button_border" onclick="openModal('form-modal-callback')">
+                    Обратная связь
+                </a>
             </div>
 
-            <div class="footer__column ">
-                <h5>Востановить зуб</h5>
-                <a href=" ">Коронка на зуб</a>
-                <a href=" ">Иплантанты зубов</a>
-                <a href=" ">Протезирование зубов</a>
-                <a href=" ">Реставрация зубов</a>
-            </div>
-
-            <div class="footer__column ">
-                <h5>Вставить все зубы</h5>
-                <a href=" ">Все зубы за 1 день All on 4</a>
-                <a href=" ">Имплантация All on 6</a>
-                <a href=" ">Несъемные протезы</a>
-                <a href=" ">Съемные протезы</a>
-            </div>
-
-            <div class="footer__column ">
-                <h5>Вылечить зубы</h5>
-                <a href=" ">Лечение зубов</a>
-                <a href=" ">Удаление зуба</a>
-                <a href=" ">Лечение десен</a>
-                <a href=" ">Чистота зубов</a>
-            </div>
-
-            <div class="footer__column ">
-                <h5>Красивая улыбка</h5>
-                <a href=" ">Виниры на зубы</a>
-                <a href=" ">Брекеты</a>
-                <a href=" ">Отбеливание зубов</a>
-                <a href=" ">Чистка Air Flow</a>
-            </div>
-
-            <div class="footer__column ">
-                <h5>Контакты</h5>
-                <a href=" ">
-                    <img src="./images/footer/smartphone.svg " alt=" "> +7 (861) 298-34-14</a>
-                <a href=" ">
-                    <img src="./images/footer/clock.svg " alt=" "> пн - вс 09:00 - 20:00</a>
-                <a href=" ">
-                    <img src="./images/footer/geo.svg " alt=" "> г.Краснодар,
-                    <br>ул. Орджоникидзе, 2</a>
-                <a class="doctors__button_border " onclick="openModal('form-modal-callback')">Заказать обратный звонок</a>
+            <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/35/krasnodar/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Краснодар</a><a href="https://yandex.ru/maps/35/krasnodar/house/ulitsa_ordzhonikidze_24/Z0EYfwFlQEwPQFpvfXxzc3pnYw==/?ll=38.965997%2C45.022648&utm_medium=mapframe&utm_source=maps&z=17.1"
+                    style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Орджоникидзе, 24 —
+                    Яндекс Карты</a><iframe class="map_yandex" src="https://yandex.ru/map-widget/v1/?ll=38.965997%2C45.022648&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjM2ODk4ORJJ0KDQvtGB0YHQuNGPLCDQmtGA0LDRgdC90L7QtNCw0YAsINGD0LvQuNGG0LAg0J7RgNC00LbQvtC90LjQutC40LTQt9C1LCAyNCIKDS7dG0IVMRc0Qg%3D%3D&z=17.1"
+                    width="100%" height="auto" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
             </div>
         </div>
-        <div class="footer__row ">
-            <p>
-                Разработка сайта: <a href=" ">Apollo-Production.ru</a>
-            </p>
 
-            <p>(c) 2023 drshumaev. Все права защищены</p>
+        <footer>
+            <div class="footer__row">
+                <div class="footer__column">
+                    <h5>О компании</h5>
+                    <a href="./404.html">Цены</a>
+                    <a href="./404.html">До и после</a>
+                    <a href="./404.html">Пациенты</a>
+                    <a href="./404.html">Наши врачи</a>
+                    <a href="./404.html">Отзывы</a>
+                    <a href="./404.html">Из других городов</a>
+                    <div class="footer__row-btn"><span></span><span></span></div>
+                </div>
 
-            <div class="soc_link d_flex ">
-                <a href=" "><img src="images/products/icon/insta.svg " alt=" "></a>
-                <a href=" "><img src="images/products/icon/telegram.svg " alt=" "></a>
-                <a href=" "><img src="images/products/icon/vk.svg " alt=" "></a>
+                <div class="footer__column">
+                    <h5>Востановить зуб</h5>
+                    <a href="./404.html">Коронка на зуб</a>
+                    <a href="./implants.html">Иплантанты зубов</a>
+                    <a href="./404.html">Протезирование зубов</a>
+                    <a href="./404.html">Реставрация зубов</a>
+                    <div class="footer__row-btn"><span></span><span></span></div>
+                </div>
+
+                <div class="footer__column">
+                    <h5>Вставить все зубы</h5>
+                    <a href="./all-on-4.html">Все зубы за 1 день All on 4</a>
+                    <a href="./all-on-4.html">Имплантация All on 6</a>
+                    <a href="./404.html">Несъемные протезы</a>
+                    <a href="./404.html">Съемные протезы</a>
+                    <div class="footer__row-btn"><span></span><span></span></div>
+                </div>
+
+                <div class="footer__column">
+                    <h5>Вылечить зубы</h5>
+                    <a href="./404.html">Лечение зубов</a>
+                    <a href="./404.html">Удаление зуба</a>
+                    <a href="./404.html">Лечение десен</a>
+                    <a href="./404.html">Чистота зубов</a>
+                    <div class="footer__row-btn"><span></span><span></span></div>
+                </div>
+
+                <div class="footer__column">
+                    <h5>Красивая улыбка</h5>
+                    <a href="./404.html">Бректы на зубы</a>
+                    <a href="./404.html">Брекеты</a>
+                    <a href="./404.html">Отбеливание зубов</a>
+                    <a href="./404.html">Чистка Air Flow</a>
+                    <div class="footer__row-btn"><span></span><span></span></div>
+                </div>
+
+                <div class="footer__column">
+                    <h5>Контакты</h5>
+                    <a href="tel:+78612983414">
+                        <img src="./images/footer/smartphone.svg" alt=""> +7 (861) 298-34-14</a>
+                    <a href="./404.html">
+                        <img src="./images/footer/clock.svg" alt=""> пн - вс 09:00 - 20:00</a>
+                    <a href="https://yandex.ru/maps/-/CCUOUKvK-B">
+                        <img src="./images/footer/geo.svg" alt=""> г.Краснодар,
+                        <br>ул. Орджоникидзе, 2</a>
+                    <a class="doctors__button_border" onclick="openModal('form-modal-callback')">Заказать обратный
+                        звонок</a>
+                    <div class="footer__row-btn"><span></span><span></span></div>
+                </div>
             </div>
-        </div>
-    </footer>
+            <div class="footer__row">
+                <p>
+                    Разработка сайта: <a href="Apollo-Production.ru">Apollo-Production.ru</a>
+                </p>
+
+                <p>(c) 2023 drshumaev. Все права защищены</p>
+
+                <div class="soc_link d_flex">
+                    <a href="https://instagram.com/dr_shumaev?igshid=YmMyMTA2M2Y="><img src="images/products/icon/insta.svg" alt=""></a>
+                    <a href="https://t.me/dr_shumaev"><img src="images/products/icon/telegram.svg" alt=""></a>
+                    <a href="https://vk.com/dr.shumaevstomatolog"><img src="images/products/icon/vk.svg" alt=""></a>
+                </div>
+            </div>
+        </footer>
+    </section>
 
     <div id="form-modal-callback" class="modal form-modal">
         <div class="modal-content">
@@ -1189,12 +1225,12 @@
         </div>
     </div>
 
-    <script src="https://unpkg.com/accordion-js@3.3.2/dist/accordion.min.js "></script>
-    <script src="https://cdn.jsdelivr.net/gh/tomik23/circular-progress-bar@1.1.9/dist/circularProgressBar.min.js "></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js "></script>
-
-    <script src="script/script.js "></script>
-    <script src="script/accordion.js "></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./script/telegramform.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/tomickigrzegorz/circular-progress-bar@1.1.9/dist/circularProgressBar.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./script/script.js"></script>
+    <script src="./script/accordion.js "></script>
 </body>
 
 </html>
