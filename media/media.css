@@ -1278,7 +1278,7 @@
 }
 
 @media (max-width: 850px) {
-    .experience{
+    .experience {
         justify-content: space-between;
     }
 
@@ -1889,7 +1889,7 @@
         width: 100%;
     }
 
-    .consultation_form p{
+    .consultation_form p {
         width: 100%;
     }
 
@@ -1927,5 +1927,30 @@
     }
     .payment-form h3 {
         font-size: 24px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .serivces__row {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 1000px) {
+    .serivces__row {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+
+        margin-bottom: 15px;
+    }
+
+    .services__container_separated-1 {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .serivces__row {
+        grid-template-columns: 1fr;
     }
 }
